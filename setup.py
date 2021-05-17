@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""ProxyList.
+"""ProxyLists.
 
     Get a list of free Proxy Servers
 See:
@@ -9,7 +9,7 @@ https://github.com/phenobarbital/proxylist
 from setuptools import setup, find_packages
 
 setup(
-    name='proxylist',
+    name='proxylists',
     version=open("VERSION").read().strip(),
     python_requires=">=3.7.0",
     url='https://github.com/phenobarbital/proxylist',

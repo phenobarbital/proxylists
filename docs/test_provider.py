@@ -1,4 +1,4 @@
-from proxylist.proxies import ProxyDB # getting from proxydb.net
+from proxylists.proxies import ProxyDB # getting from proxydb.net
 import asyncio
 
 async def get_proxies():
