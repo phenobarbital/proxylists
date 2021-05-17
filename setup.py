@@ -23,11 +23,10 @@ setup(
     ],
     author='Jesus Lara',
     author_email='jlara@trocglobal.com',
-    packages=find_packages(exclude=['contrib', 'docs']),
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     setup_requires=[
         "wheel==0.36.2",
         "Cython==0.29.21",
-        "numpy==1.19.4",
         "asyncio==3.4.3",
         "cchardet==2.1.7"
     ],
@@ -36,10 +35,10 @@ setup(
         "requests==2.25.1",
         "aiohttp==3.7.4",
         "asyncio==3.4.3",
+        "lxml==4.6.3",
         "uvloop==0.14.0",
         'rapidjson==1.0.0',
         'python-rapidjson==0.9.3',
-        'jsonpath-rw-ext==1.2.2',
         'cchardet==2.1.7'
     ],
     tests_require=[
