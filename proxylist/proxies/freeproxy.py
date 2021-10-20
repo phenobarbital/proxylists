@@ -6,7 +6,7 @@ class FreeProxy(ProxyServer):
 
     async def get_proxies(self):
         proxies = []
-        table = self.parser.xpath('//table[@id="proxylisttable"]')[0]
+        table = self.parser.xpath('//table[@class="table table-striped table-bordered"]')[0]
         for i in table.xpath("//tbody/tr")[:10]:
             if i.xpath('.//td[7][contains(text(),"yes")]'):
                 proxy = ":".join(
