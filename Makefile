@@ -1,9 +1,6 @@
 .venv:
 	python3.8 -m venv .venv
-	source .venv/bin/activate && make setup dev
 	echo 'run `source .venv/bin/activate` to start develop asyncDB'
-
-venv: .venv
 
 setup:
 	python -m pip install -Ur docs/requirements.txt
