@@ -9,7 +9,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.flit.metadata]
-module = "proxylist"
+module = "proxylists"
 author = "Jesus Lara Gimenez"
 author-email = "jesuslarag@gmail.com"
 home-page = "https://github.com/phenobarbital/proxylist"
