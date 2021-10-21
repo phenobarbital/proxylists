@@ -32,14 +32,14 @@ setup(
     ],
     install_requires=[
         "wheel==0.37.0",
-        "requests==2.25.1",
+        "requests>=2.26.0",
         "aiohttp==3.7.4",
         "asyncio==3.4.3",
         "lxml==4.6.3",
-        "uvloop==0.14.0",
-        'rapidjson==1.0.0',
-        'python-rapidjson==0.9.3',
-        'cchardet==2.1.7'
+        "uvloop>=0.16.0",
+        'rapidjson>=1.0.0',
+        'python-rapidjson>=1.5',
+        'cchardet>=2.1.7'
     ],
     tests_require=[
             'pytest>=5.4.0',
