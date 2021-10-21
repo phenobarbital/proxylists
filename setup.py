@@ -37,10 +37,8 @@ setup(
         "uvloop>=0.16.0",
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
-        "lxml==4.6.3",
         'rapidjson>=1.0.0',
-        'python-rapidjson>=1.5',
-        'cchardet>=2.1.7'
+        'python-rapidjson>=1.5'
     ],
     tests_require=[
             'pytest>=5.4.0',
