@@ -32,11 +32,12 @@ setup(
     ],
     install_requires=[
         "wheel==0.37.0",
-        "requests>=2.26.0",
         "aiohttp==3.7.4",
         "asyncio==3.4.3",
-        "lxml==4.6.3",
         "uvloop>=0.16.0",
+        'requests>=2.25.0',
+        'requests[socks]>=2.25.1',
+        "lxml==4.6.3",
         'rapidjson>=1.0.0',
         'python-rapidjson>=1.5',
         'cchardet>=2.1.7'
