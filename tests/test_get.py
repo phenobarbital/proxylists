@@ -6,7 +6,7 @@ import pytest
 import asyncio
 from datetime import datetime
 import timeit
-from proxylists import get_proxies
+from proxylist import get_proxies
 
 @pytest.fixture
 def event_loop():

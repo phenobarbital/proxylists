@@ -9,7 +9,7 @@ https://github.com/phenobarbital/proxylist
 from setuptools import setup, find_packages
 
 setup(
-    name='proxylists',
+    name='proxylist',
     version=open("VERSION").read().strip(),
     python_requires=">=3.7.0",
     url='https://github.com/phenobarbital/proxylist',
