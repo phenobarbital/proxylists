@@ -6,7 +6,11 @@ class Hidemy(ProxyServer):
 
     async def get_proxies(self):
         proxies = []
-        table = self.parser.xpath("//table")[0]
+        try:
+            table = self.parser.xpath("//table")[0]
+        except Exception as err:
+            logging.exception(err)
+            return []
         for i in table.xpath("//tbody/tr")[:10]:
             if i.xpath('.//td[5][contains(text(),"HTTPS")]'):
                 proxy = ":".join(
