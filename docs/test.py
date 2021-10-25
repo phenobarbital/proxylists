@@ -1,4 +1,4 @@
-from proxylists import get_proxies
+from proxylist import get_proxies
 
 
 proxies = get_proxies()

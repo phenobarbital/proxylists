@@ -6,7 +6,11 @@ import pytest
 import asyncio
 from datetime import datetime
 import timeit
-from proxylists import get_proxies
+from proxylist import get_proxies, proxy_list
+
+
+pytestmark = pytest.mark.asyncio
+
 
 @pytest.fixture
 def event_loop():
@@ -15,12 +19,16 @@ def event_loop():
     yield loop
     loop.close()
 
+
 async def test_proxylist(event_loop):
     """ Test Proxy List"""
     error = None
+    proxies = []
     try:
-        proxies = get_proxies()
+        proxies = await proxy_list()
+        print(proxies)
     except Exception as err:
+        print(err)
         error = err
     pytest.assume(len(proxies) > 0)
     pytest.assume(not error)
