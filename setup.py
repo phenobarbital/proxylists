@@ -27,12 +27,11 @@ setup(
     setup_requires=[
         "wheel==0.37.0",
         "Cython==0.29.21",
-        "asyncio==3.4.3",
-        "cchardet==2.1.7"
+        "asyncio==3.4.3"
     ],
     install_requires=[
         "wheel==0.37.0",
-        "aiohttp==3.7.4",
+        "aiohttp==3.8.1",
         "asyncio==3.4.3",
         "uvloop>=0.16.0",
         'requests>=2.25.0',
