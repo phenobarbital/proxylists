@@ -49,7 +49,7 @@ setup(
             'pytest-assume==2.4.2'
     ],
     project_urls={  # Optional
-        'Source': 'https://github.com/phenobarbital/proxylist',
+        'Source': 'https://github.com/phenobarbital/proxylists',
         'Funding': 'https://paypal.me/phenobarbital',
         'Say Thanks!': 'https://saythanks.io/to/phenobarbital',
     },
