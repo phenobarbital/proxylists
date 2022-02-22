@@ -1,6 +1,7 @@
-# proxylist
+# proxylists
 
-Get a list of free proxy servers from different providers
+Proxylists is a simple tool for getting a list of proxy IPs from
+free proxy servers using several providers.
 
 ## Supported Providers:
 
@@ -8,11 +9,13 @@ Get a list of free proxy servers from different providers
  * hidemy.name
  * proxydb.net
 
-can retrieve the list by provider or from all of them using the "get_proxies()" method.
+can retrieve a list of IPs by provider or from all of them
+using the "get_proxies()" method.
 
 ### Download
 
-The list can be tabulated (one proxy by line, to save on .txt, csv, etc) or a dictionary.
+The list can be tabulated (one proxy by line, to save on .txt, csv, etc)
+or a python dictionary.
 
 ## Usage
 

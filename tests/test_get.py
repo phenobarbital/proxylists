@@ -6,18 +6,12 @@ import pytest
 import asyncio
 from datetime import datetime
 import timeit
-from proxylist import get_proxies, proxy_list
+from proxylists import get_proxies, proxy_list, check_address
+import pytest_asyncio
+from proxylists.proxies import ProxyDB  # getting from proxydb.net
 
 
 pytestmark = pytest.mark.asyncio
-
-
-@pytest.fixture
-def event_loop():
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    yield loop
-    loop.close()
 
 
 async def test_proxylist(event_loop):
@@ -34,4 +28,26 @@ async def test_proxylist(event_loop):
     pytest.assume(not error)
     tasks = []
     for proxy in proxies:
-        pass # TODO: checking if is a valid -reachable- proxy
+        pass  # TODO: checking if is a valid -reachable- proxy
+
+
+async def test_proxy(event_loop):
+    try:
+        list = await ProxyDB().get_list()
+        print(list)
+        for address in list:
+            try:
+                host, port = address.split(':')
+                print('HOST: ', host, port)
+                reachable = await check_address(
+                    host=host,
+                    port=port
+                )
+                print(host, port, reachable)
+                pytest.assume(reachable is True)
+                await asyncio.sleep(1)
+            except Exception as err:
+                print(err)
+                pytest.assume(not err)
+    finally:
+        pytest.assume(len(list) > 0)

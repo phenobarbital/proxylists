@@ -3,16 +3,16 @@
 
     Get a list of free Proxy Servers
 See:
-https://github.com/phenobarbital/proxylist
+https://github.com/phenobarbital/proxylists
 """
 
 from setuptools import setup, find_packages
 
 setup(
-    name='proxylist',
+    name='proxylists',
     version=open("VERSION").read().strip(),
     python_requires=">=3.7.0",
-    url='https://github.com/phenobarbital/proxylist',
+    url='https://github.com/phenobarbital/proxylists',
     description='List of Proxy Servers',
     long_description='Get a list of free Proxy Servers',
     classifiers=[
@@ -38,7 +38,8 @@ setup(
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
         'rapidjson>=1.0.0',
-        'python-rapidjson>=1.5'
+        'python-rapidjson>=1.5',
+        'lxml==4.8.0'
     ],
     tests_require=[
             'pytest>=5.4.0',
