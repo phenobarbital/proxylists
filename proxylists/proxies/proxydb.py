@@ -1,6 +1,7 @@
 from .server import ProxyServer
 import logging
 
+
 class ProxyDB(ProxyServer):
     url = "http://proxydb.net/?protocol=https&country="
 
@@ -13,6 +14,6 @@ class ProxyDB(ProxyServer):
             return []
         for i in table.xpath("//tbody/tr")[:10]:
             if i.xpath('.//td[5][contains(text(),"HTTPS")]'):
-                proxy = i.xpath(".//td[1]/a/text()")[0]
+                proxy = str(i.xpath(".//td[1]/a/text()")[0])
                 proxies.append(proxy)
         return proxies
