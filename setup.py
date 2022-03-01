@@ -31,7 +31,7 @@ setup(
     ],
     install_requires=[
         "wheel==0.37.0",
-        "aiohttp==3.8.1",
+        "aiohttp==3.7.4",
         "asyncio==3.4.3",
         "uvloop>=0.16.0",
         'requests>=2.25.0',
