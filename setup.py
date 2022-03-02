@@ -26,14 +26,14 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     setup_requires=[
         "wheel==0.37.0",
-        "Cython==0.29.21",
+        "Cython==0.29.28",
         "asyncio==3.4.3"
     ],
     install_requires=[
         "wheel==0.37.0",
-        "aiohttp==3.7.4",
         "asyncio==3.4.3",
         "uvloop>=0.16.0",
+        "aiohttp==3.8.1",
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
         'rapidjson>=1.0.0',
