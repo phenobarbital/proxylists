@@ -38,7 +38,7 @@ setup(
         'requests[socks]>=2.25.1',
         'rapidjson>=1.0.0',
         'python-rapidjson>=1.5',
-        'lxml==4.8.0'
+        'lxml==4.9.1'
     ],
     tests_require=[
             'pytest>=5.4.0',
