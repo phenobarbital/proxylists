@@ -11,7 +11,7 @@ from setuptools import setup, find_packages
 setup(
     name='proxylists',
     version=open("VERSION").read().strip(),
-    python_requires=">=3.7.0",
+    python_requires=">=3.8.0",
     url='https://github.com/phenobarbital/proxylists',
     description='List of Proxy Servers',
     long_description='Get a list of free Proxy Servers',
@@ -25,12 +25,10 @@ setup(
     author_email='jlara@trocglobal.com',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     setup_requires=[
-        "wheel==0.37.0",
-        "Cython==0.29.28",
+        "wheel==0.37.1",
         "asyncio==3.4.3"
     ],
     install_requires=[
-        "wheel==0.37.0",
         "asyncio==3.4.3",
         "uvloop>=0.16.0",
         "aiohttp==3.8.1",
@@ -38,14 +36,11 @@ setup(
         'requests[socks]>=2.25.1',
         'rapidjson>=1.0.0',
         'python-rapidjson>=1.5',
-        'lxml==4.8.0'
+        'lxml==4.9.1'
     ],
     tests_require=[
             'pytest>=5.4.0',
-            'coverage',
-            'pytest-asyncio==0.14.0',
-            'pytest-xdist==2.1.0',
-            'pytest-assume==2.4.2'
+            'coverage'
     ],
     project_urls={  # Optional
         'Source': 'https://github.com/phenobarbital/proxylists',
