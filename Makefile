@@ -3,7 +3,6 @@ venv:
 	echo 'run `source .venv/bin/activate` to start develop ProxyLists'
 
 develop:
-	pip install wheel==0.37.0
 	pip install -e .
 	python -m pip install -Ur docs/requirements-dev.txt
 
