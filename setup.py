@@ -32,7 +32,7 @@ setup(
         "wheel==0.37.1",
         "asyncio==3.4.3",
         "uvloop>=0.16.0",
-        "aiohttp==3.8.1",
+        "aiohttp==3.8.3",
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
         'rapidjson>=1.0.0',
