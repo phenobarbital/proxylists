@@ -8,6 +8,7 @@ https://github.com/phenobarbital/proxylists
 
 from setuptools import setup, find_packages
 
+
 setup(
     name='proxylists',
     version=open("VERSION").read().strip(),
@@ -24,19 +25,19 @@ setup(
     author='Jesus Lara',
     author_email='jlara@trocglobal.com',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+    license='BSD',
+    license_file='LICENSE',
     setup_requires=[
         "wheel==0.37.1",
         "asyncio==3.4.3"
     ],
     install_requires=[
-        "wheel==0.37.1",
         "asyncio==3.4.3",
         "uvloop>=0.16.0",
-        "aiohttp==3.8.1",
+        "aiohttp==3.8.3",
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
-        'rapidjson>=1.0.0',
-        'python-rapidjson>=1.5',
+        'orjson==3.8.0',
         'lxml==4.9.1'
     ],
     tests_require=[

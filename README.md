@@ -41,3 +41,6 @@ loop = asyncio.get_event_loop()
 proxies = loop.run_until_complete(get_proxies())
 print(proxies)
 ```
+### License ###
+
+Proxylists is licensed under BSD license.

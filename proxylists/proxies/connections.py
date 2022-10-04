@@ -9,7 +9,7 @@ def check_host(host: str, port: int = 80, timeout: int = 2) -> bool:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         s.settimeout(timeout)  # timeout
-        s.connect((address, int(port)))
+        s.connect((host, int(port)))
         return True
     except:
         return False

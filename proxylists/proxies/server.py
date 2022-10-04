@@ -21,7 +21,7 @@ class ProxyServer(object):
             "Chrome/83.0.4103.97 Safari/537.36",
         }
         async with aiohttp.ClientSession() as session:
-            async with session.get(self.url, headers=headers) as response:
+            async with session.get(self.url, headers=headers, timeout=timeout) as response:
                 if response.status == 200:
                     try:
                         content = await response.text()
