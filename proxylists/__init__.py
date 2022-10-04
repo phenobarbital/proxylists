@@ -1,7 +1,7 @@
 import asyncio
 from .proxies import PROXY_LIST
 from .proxies.connections import check_host, check_address
-import socket
+
 
 __all__ = ["PROXY_LIST", "check_host", "check_address"]
 

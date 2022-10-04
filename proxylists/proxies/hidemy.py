@@ -1,4 +1,6 @@
+import logging
 from .server import ProxyServer
+
 
 
 class Hidemy(ProxyServer):
