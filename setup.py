@@ -28,7 +28,7 @@ setup(
     license='BSD',
     license_file='LICENSE',
     setup_requires=[
-        "wheel==0.37.1",
+        "wheel==0.38.2",
         "asyncio==3.4.3"
     ],
     install_requires=[
