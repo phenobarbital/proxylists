@@ -37,7 +37,7 @@ setup(
         "aiohttp==3.8.3",
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
-        'orjson==3.8.0',
+        'orjson==3.8.2',
         'lxml==4.9.1'
     ],
     tests_require=[
