@@ -1,6 +1,7 @@
 from .server import ProxyServer
 import logging
 
+
 class ProxyDB(ProxyServer):
     url = "http://proxydb.net/?protocol=https&country="
 
