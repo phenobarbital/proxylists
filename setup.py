@@ -21,6 +21,8 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ],
     author='Jesus Lara',
     author_email='jlara@trocglobal.com',
@@ -28,7 +30,6 @@ setup(
     license='BSD',
     license_file='LICENSE',
     setup_requires=[
-        "wheel==0.37.1",
         "asyncio==3.4.3"
     ],
     install_requires=[
@@ -37,7 +38,7 @@ setup(
         "aiohttp==3.8.3",
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
-        'orjson==3.8.0',
+        'orjson==3.8.2',
         'lxml==4.9.1'
     ],
     tests_require=[
