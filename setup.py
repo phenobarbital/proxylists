@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """ProxyLists.
 
     Get a list of free Proxy Servers
@@ -38,7 +37,7 @@ setup(
         "aiohttp==3.8.3",
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
-        'orjson==3.8.2',
+        'orjson==3.8.3',
         'lxml==4.9.1'
     ],
     tests_require=[
