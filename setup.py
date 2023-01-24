@@ -39,7 +39,7 @@ setup(
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
         'orjson==3.8.5',
-        'lxml==4.9.1'
+        'lxml==4.9.2'
     ],
     tests_require=[
             'pytest>=5.4.0',
