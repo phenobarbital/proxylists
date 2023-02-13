@@ -73,7 +73,7 @@ setup(
     install_requires=[
         "asyncio==3.4.3",
         "uvloop>=0.16.0",
-        "aiohttp==3.8.3",
+        "aiohttp==3.8.4",
         'requests>=2.25.0',
         'requests[socks]>=2.25.1',
         'orjson==3.8.5',
