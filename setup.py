@@ -55,12 +55,12 @@ setup(
     long_description=readme(),
     long_description_content_type='text/markdown',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ],
     author=__author__,
     author_email=__author_email__,
@@ -73,10 +73,10 @@ setup(
     install_requires=[
         "asyncio==3.4.3",
         "uvloop>=0.16.0",
-        "aiohttp==3.8.3",
-        'requests>=2.25.0',
-        'requests[socks]>=2.25.1',
-        'orjson==3.8.5',
+        "aiohttp==3.8.4",
+        'requests>=2.28.2',
+        'requests[socks]>=2.28.2',
+        'orjson==3.8.7',
         'lxml==4.9.2'
     ],
     tests_require=[
