@@ -1,7 +1,7 @@
 [build-system]
 requires = [
-    'setuptools==67.5.1',
-    'wheel==0.38.4',
+    'setuptools==67.6.1',
+    'wheel==0.40.0',
     'toml>=0.10.2'
 ]
 
@@ -40,3 +40,7 @@ filterwarnings = [
     "error",
     'ignore:The loop argument is deprecated since Python 3\.8, and scheduled for removal in Python 3\.10:DeprecationWarning:asyncio',
 ]
+
+[tool.build]
+manylinux-x86_64 = "manylinux_2_12_x86_64"
+manylinux-aarch64 = "manylinux_2_12_aarch64"
