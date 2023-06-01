@@ -10,7 +10,10 @@ async def proxy_list():
     proxies = []
     for proxy in PROXY_LIST:
         p = await proxy().get_list()
-        proxies = proxies + p
+        try:
+            proxies = proxies + p
+        except TypeError:
+            continue
     return proxies
 
 
