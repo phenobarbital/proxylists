@@ -72,16 +72,16 @@ setup(
     ],
     install_requires=[
         "asyncio==3.4.3",
-        "uvloop>=0.16.0",
-        "aiohttp==3.8.5",
+        "uvloop>=0.19.0",
+        "aiohttp==3.8.6",
         'requests>=2.28.2',
         'requests[socks]>=2.28.2',
-        'orjson==3.8.10',
-        'lxml==4.9.2'
+        'orjson==3.9.9',
+        'lxml==4.9.3'
     ],
     tests_require=[
-            'pytest>=5.4.0',
-            'coverage'
+        'pytest>=5.4.0',
+        'coverage'
     ],
     project_urls={  # Optional
         'Source': 'https://github.com/phenobarbital/proxylists',
