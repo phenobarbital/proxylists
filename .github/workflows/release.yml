@@ -1,4 +1,4 @@
-name: Python package build and publish
+name: Build and Publish Python 🐍 distributions 📦 to PyPI and TestPyPI
 on:
   release:
     types: [created]
@@ -25,4 +25,4 @@ jobs:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.PROXYLISTS_PYPI_API_TOKEN }}
       run: |
-        twine upload  dist/*-manylinux*.whl
+        twine upload  dist/*.whl

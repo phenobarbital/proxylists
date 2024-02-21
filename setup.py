@@ -73,11 +73,11 @@ setup(
     install_requires=[
         "asyncio==3.4.3",
         "uvloop>=0.19.0",
-        "aiohttp==3.9.1",
+        "aiohttp==3.9.2",
         'requests>=2.28.2',
         'requests[socks]>=2.28.2',
-        'orjson==3.9.9',
-        'lxml==4.9.3'
+        'orjson==3.9.10',
+        'lxml>=4.6.0'
     ],
     tests_require=[
         'pytest>=5.4.0',
