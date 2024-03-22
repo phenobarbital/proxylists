@@ -49,7 +49,7 @@ with open(version, 'r', encoding='utf-8') as meta:
 setup(
     name='proxylists',
     version=__version__,
-    python_requires=">=3.8.0",
+    python_requires=">=3.9.12",
     url='https://github.com/phenobarbital/proxylists',
     description=__description__,
     long_description=readme(),
@@ -61,6 +61,7 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
     ],
     author=__author__,
     author_email=__author_email__,
@@ -73,10 +74,9 @@ setup(
     install_requires=[
         "asyncio==3.4.3",
         "uvloop>=0.19.0",
-        "aiohttp==3.9.2",
+        "aiohttp>=3.9.3",
         'requests>=2.28.2',
         'requests[socks]>=2.28.2',
-        'orjson==3.9.10',
         'lxml>=4.6.0'
     ],
     tests_require=[
