@@ -85,6 +85,8 @@ setup(
     ],
     project_urls={  # Optional
         'Source': 'https://github.com/phenobarbital/proxylists',
+        'Tracker': 'https://github.com/phenobarbital/proxylists/issues',
+        'Documentation': 'https://github.com/phenobarbital/proxylists/',
         'Funding': 'https://paypal.me/phenobarbital',
         'Say Thanks!': 'https://saythanks.io/to/phenobarbital',
     },
