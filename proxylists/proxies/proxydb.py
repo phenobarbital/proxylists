@@ -1,5 +1,5 @@
-from .server import ProxyServer
 import logging
+from .server import ProxyServer
 
 
 class ProxyDB(ProxyServer):
