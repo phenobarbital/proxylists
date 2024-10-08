@@ -1,10 +1,9 @@
-import aiohttp
-import asyncio
-from lxml.html import fromstring
 from abc import abstractmethod
+import aiohttp
+from lxml.html import fromstring
 
 
-class ProxyServer(object):
+class ProxyServer:
     url = ""
     parser = None
 
@@ -35,3 +34,10 @@ class ProxyServer(object):
     @abstractmethod
     async def get_proxies(self):
         pass
+
+    async def get_proxy_list(self) -> dict:
+        proxies = await self.get_list()
+        return {
+            'http': f'http://{proxies[0]}',
+            'https': f'http://{proxies[0]}',
+        }
