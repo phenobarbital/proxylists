@@ -7,7 +7,12 @@ import aiohttp
 from .server import ProxyServer
 
 class Oxylabs(ProxyServer):
-    url = 'customer-{username}-cc-{country}-sesstime-{session_time}:{password}@pr.oxylabs.io:7777'
+    """
+    Oxylabs Proxy information.
+    """
+    https_support: bool = True
+    oxylabs_base: str = 'pr.oxylabs.io:7777'
+    url = 'customer-{username}-cc-{country}-sesstime-{ses_time}:{password}@{oxy}'
 
     def __init__(self, **kwargs):
         self.username = kwargs.get(
@@ -24,12 +29,13 @@ class Oxylabs(ProxyServer):
         self.customer = self.url.format(
             username=self.username,
             password=self.password,
-            session_time=self.session_time,
+            ses_time=self.session_time,
             country=self.country,
+            oxy=self.oxylabs_base
         )
         self.proxy = {
             'http': f'http://{self.customer}',
-            'https': f'http://{self.customer}',
+            'https': f'https://{self.customer}',
         }
 
     async def get_list(self):
