@@ -6,6 +6,7 @@ from lxml.html import fromstring
 class ProxyServer:
     url = ""
     parser = None
+    https_support: bool = False
 
     async def get_list(self):
         timeout = aiohttp.ClientTimeout(total=60)
@@ -37,6 +38,11 @@ class ProxyServer:
 
     async def get_proxy_list(self) -> dict:
         proxies = await self.get_list()
+        if self.https_support is True:
+            return {
+                'http': f'http://{proxies[0]}',
+                'https': f'https://{proxies[0]}',
+            }
         return {
             'http': f'http://{proxies[0]}',
             'https': f'http://{proxies[0]}',
