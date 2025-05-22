@@ -7,6 +7,7 @@ class ProxyServer:
     url = ""
     parser = None
     https_support: bool = False
+    timeout: float = 30.0
 
     async def get_list(self):
         timeout = aiohttp.ClientTimeout(total=60)
