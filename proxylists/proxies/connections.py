@@ -9,13 +9,13 @@ def check_host(host: str, port: int = 80, timeout: int = 2) -> bool:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         s.settimeout(timeout)  # timeout
-        s.connect((host, int(port)))
+        s.connect((host, port))
         return True
-    except:
+    except Exception:
         return False
     finally:
-      s.shutdown(socket.SHUT_RDWR)
-      s.close()
+        s.shutdown(socket.SHUT_RDWR)
+        s.close()
 
 
 async def check_address(host: str, port: int = 80, timeout: int = 2) -> bool:
@@ -38,5 +38,5 @@ async def check_address(host: str, port: int = 80, timeout: int = 2) -> bool:
         writer.close()
         await writer.wait_closed()
         return True
-    except:
+    except Exception:
         return False
